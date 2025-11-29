@@ -61,9 +61,13 @@ header h1 {
     position: relative;
     max-width: 400px;
     margin: 0 auto;
+    padding-top: 533px;
 }
 
 #adventCal {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     display: block;
@@ -77,7 +81,7 @@ ul#adventDoors {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 533px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -187,5 +191,13 @@ ul#adventDoors {
     
     .demo-content article h1 {
         font-size: 16px;
+    }
+    
+    .calendar-container {
+        padding-top: 400px;
+    }
+    
+    ul#adventDoors {
+        height: 400px;
     }
 }
