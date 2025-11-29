@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8B0000 0%, #4A0404 100%);
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
 }
@@ -26,7 +26,7 @@ body {
 
 /* Header styles */
 header.demo-header {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(139, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -103,7 +103,7 @@ ul#adventDoors {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(220, 20, 60, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     transition: all 0.3s ease;
