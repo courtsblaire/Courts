@@ -46,6 +46,7 @@ header h1 {
     max-width: 450px;
     margin: 40px auto;
     padding: 20px;
+        margin-top: 100px;
 }
 
 .demo-content article h1 {
