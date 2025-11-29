@@ -1,0 +1,191 @@
+/* Base styles */
+html {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* Header styles */
+header.demo-header {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Content area */
+.demo-content {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.demo-content article h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Calendar container */
+.calendar-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#adventCal {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Advent doors */
+ul#adventDoors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#adventDoors li {
+    position: absolute;
+}
+
+#adventDoors li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+#adventDoors li a:not(.disabled):hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-color: #fff;
+}
+
+#adventDoors li a.disabled {
+    background: rgba(150, 150, 150, 0.3);
+    border-color: rgba(150, 150, 150, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}
+
+#adventDoors li a.opened {
+    background: rgba(76, 175, 80, 0.4);
+    border-color: #4CAF50;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+}
+
+#caption {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .demo-content {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .demo-content article h1 {
+        font-size: 16px;
+    }
+}
