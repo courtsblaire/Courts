@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Christmas Advent Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+    <header class="demo-header cf">
+        <h1>Christmas Advent Calendar 2025</h1>
+    </header>
+    <div class="demo-content cf">
+        <article>
+            <h1>Click a day to reveal your surprise!</h1>
+            <div class="calendar-container">
+                <img src="images/background.jpg" alt="Advent Calendar Background" width="400" height="533" id="adventCal">
+                <ul id="adventDoors"></ul>
+            </div>
+        </article>
+    </div>
+    
+    <!-- Modal for displaying images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+    
+    <script src="calendar.js"></script>
+</body>
+</html>
